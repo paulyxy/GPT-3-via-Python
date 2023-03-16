@@ -22,7 +22,7 @@ with st.expander("Optoinal: click here to see your API key."):
     st.write(myKey)
     
 def askGPT(text):
-    response = openai.Completion.create(engine="text-davinci-003",prompt=text,temperature=0.6,max_tokens=150,)
+    response = openai.Completion.create(engine="text-davinci-003",prompt=text,temperature=0.6,max_tokens=1500)
     return response.choices[0].text
 
 myQuestion=[]
